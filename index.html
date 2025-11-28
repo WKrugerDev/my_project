@@ -1,4 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio showcasing my projects, skills, and services. Get in touch through the contact form.">
+    <title>My Project - Portfolio & Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <button class="hamburger" aria-label="Toggle menu" data-menu-toggle aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav aria-label="Main navigation" data-menu class="nav-menu" aria-hidden="true">
+            <ul>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+</nav>
+    </header>
+    <main>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>Hi! My name is Werner, and I'm an aspiring full-stack developer currently building my skills in modern web development. My learning journey started with a curiosity about programming, which quickly evolved into a structured path where I've been using tools like Visual Studio Code, Git, and version control platforms such as GitHub to manage and grow my projects.</p>
 
+            <p>A significant part of my growth has come from working with AI tools like ChatGPT. I've used it to deepen my understanding of concepts ranging from JavaScript modules, asynchronous programming in C#, and CSS layout systems, to real-world workflows like Git branching and pull requests. My goal has never been for AI to write code for me—instead, I've used it as a technical mentor to help me understand why code works, not just how to type it.</p>
+
+            <p>I'm passionate about building systems that are clean, maintainable, and scalable. Whether I'm structuring a webpage using Flexbox and Grid, debugging async functions, or organizing repositories for multiple applications, I enjoy breaking down complex concepts into practical steps and seeing ideas come to life.</p>
+
+            <p>This portfolio represents my progress, my practice, and my commitment to keep improving. I look forward to creating useful, real-world applications as I continue to expand my knowledge and skill set.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div role="region" aria-label="Featured projects">
+                <select id="project-filter">
+                    <option value="all">All</option>
+                    <option value="web">Web</option>
+                    <option value="mobile">Mobile</option>
+                </select>
+                <article class="project" data-category="web">
+                    <h3>Project 1 (Web)</h3>
+                    <figure>
+                        <img src="https://picsum.photos/600/400?random=1" alt="Project 1: E-commerce platform dashboard showing sales metrics">
+                        <figcaption>A brief description of Project 1.</figcaption>
+                    </figure>
+                </article>
+                <article class="project" data-category="web">
+                    <h3>Project 2 (Web)</h3>
+                    <figure>
+                        <img src="https://picsum.photos/600/400?random=2" alt="Project 2: Mobile app interface for task management">
+                        <figcaption>A brief description of Project 2.</figcaption>
+                    </figure>
+                </article>
+                <article class="project" data-category="mobile">
+                    <h3>Project 3 (Mobile)</h3>
+                    <figure>
+                        <img src="https://picsum.photos/600/400?random=3" alt="Project 3: Data visualization dashboard with charts and graphs">
+                        <figcaption>A brief description of Project 3.</figcaption>
+                    </figure>
+                </article>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Git</li>
+                <li>Python</li>
+                <li>SQL</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form" action="#" method="post">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Project</p>
+    </footer>
+<script src="./script.js" defer></script>
+</body>
 </html>
+
