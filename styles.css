@@ -453,3 +453,32 @@ footer p {
 .project img:hover {
     opacity: 0.8;
 }
+
+.projects-container {
+    display: flex;          /* horizontal row */
+    flex-wrap: wrap;        /* wrap to next line on small screens */
+    gap: 2rem;              /* space between projects */
+    justify-content: center; /* center the row */
+    margin-top: 1.5rem;
+}
+
+.project {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    padding: 1rem;
+    width: 300px;            /* each project card same width */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 0.75rem;
+}
